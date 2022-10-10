@@ -1,0 +1,83 @@
+body{
+    height: 100vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(odeg, rgba(34,193,195,1)33%, rgba(45,207,253,1)74%);
+    font-family: 'Open Sans',sans-serif;
+    padding-top: 50px;
+}
+#container{
+    height: 400px;
+    width: 300px;
+    margin: 60px auto;
+    box-shadow: 10px 5px 25px rgb(122,122,122);
+    background-color: white;
+}
+input{
+    width: 60%;
+    margin: auto;
+    outline: none;
+    border: none;
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+#btn{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 50%;
+    outline:none ;
+    font-size:20px;
+    font-weight:bold;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #e73609;
+}
+#head{
+    color: white;
+    text-align: center;
+}
+
+.elements{
+    padding: 20px 0px;
+}
+.list{
+    height: 75%;
+    width: 100%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.list::-webkit-scrollbar{
+    appearance: none;
+}
+.element{
+    position: relative;
+    width: 55%;
+    text-align: left;
+    transition: 0.2s;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    padding-left: 20px;
+    padding-right: 80px;
+    word-wrap: break-word;
+}
+.element .dustbin{
+    position: absolute;
+    margin: auto;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    filter: grayscale(1);
+}
+.element:hover{
+    transform: scale(1.1);
+}
